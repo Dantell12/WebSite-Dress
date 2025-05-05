@@ -1,0 +1,35 @@
+/* 1. Declara Aktiv Grotesk Extended (peso 100) */
+
+@font-face {
+    font-family: "aktiv-grotesk-extended";
+    font-style: normal;
+    font-weight: 100;
+    src: url("/fonts/AktivGroteskExtended-Light.woff2") format("woff2"), url("/fonts/AktivGroteskExtended-Light.woff") format("woff");
+    font-display: swap;
+}
+
+
+/* 2. Declara Cormorant Infant (peso 300) */
+
+@font-face {
+    font-family: "cormorant-infant";
+    font-style: normal;
+    font-weight: 300;
+    src: url("/fonts/CormorantInfant-Light.woff2") format("woff2"), url("/fonts/CormorantInfant-Light.woff") format("woff");
+    font-display: swap;
+}
+
+
+/* Tailwind directives */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* (Opcional) Aplica tu font-base al body */
+
+@layer base {
+    body {
+        @apply font-sans;
+    }
+}

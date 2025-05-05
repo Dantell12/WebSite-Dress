@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desi - Minimal Swimwear</title>
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-gray-900">
+
+    <!-- NAVBAR: fixed y transparente -->
+
+    <!-- NAVBAR -->
+    <nav class="absolute top-0 left-0 w-full z-50 bg-transparent">
+        <!-- este div se vuelve fijo solo en móviles -->
+        <div class="fixed w-full flex items-center justify-between h-16 px-2 sm:px-4 lg:px-6 bg-white md:static md:bg-transparent z-50">
+            <a href="#" class="text-3xl font-semibold hover:text-gold scale-y-75 text-black font-paragraph">Desi</a>
+
+            <!-- Botón hamburguesa solo en móvil, fijo -->
+            <button id="btn-menu" class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1 focus:outline-none z-50">
+        <span class="block w-6 h-0.5 bg-black transform transition duration-300 origin-center"></span>
+        <span class="block w-6 h-0.5 bg-black transition-opacity bg-opacity-0 duration-300"></span>
+        <span class="block w-6 h-0.5 bg-black transform transition duration-300 origin-center"></span>
+      </button>
+
+            <!-- Menú desktop -->
+            <ul class="hidden md:flex space-x-12 text-xl font-paragraph font-bold text-black tracking-wide">
+                <li><a href="index.html" class="hover:text-gold transition">Inicio</a></li>
+                <li><a href="lookbook.html" class="hover:text-gold transition">LookBook</a></li>
+                <li><a href="products.html" class="hover:text-gold transition">Tienda</a></li>
+                <li><a href="about.html" class="hover:text-gold transition">Nosotros</a></li>
+                <li><a href="contact.html" class="hover:text-gold transition">Contáctanos</a></li>
+            </ul>
+        </div>
+
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="font-paragraph font-semibold hidden fixed inset-0 z-40 bg-white flex-col items-center justify-center space-y-8 text-4xl text-black h-full">
+            <a href="index.html" class="hover:text-gold transition scale-y-75">Inicio</a>
+            <a href="lookbook.html" class="hover:text-gold transition scale-y-75">LookBook</a>
+            <a href="products.html" class="hover:text-gold transition scale-y-75">Tienda</a>
+            <a href="about.html" class="hover:text-gold transition scale-y-75">Nosotros</a>
+            <a href="contact.html" class="hover:text-gold transition scale-y-75">Contáctanos</a>
+        </div>
+    </nav>
+
+
+    <!-- HEADER / HERO -->
+    <header class="relative h-screen">
+        <!-- background image absoluta -->
+        <div class="absolute inset-0 bg-cover bg-top" style="background-image: url('../img/background6.jpeg');">
+        </div>
+        <!-- overlay opcional para contraste -->
+        <div class="absolute inset-0 bg-white bg-opacity-15"></div>
+        <!-- contenido -->
+        <div class="relative z-10 flex items-center h-full px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl font-title text-black">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-title text-left">
+                    Tu verano, tu estilo
+                </h1>
+                <p class="mt-2 text-xl md:text-2xl md:tracking-normal tracking-wide font-paragraph text-left">
+                    Trajes únicos para días inolvidables. Elegí el tuyo y sentí el verano.
+
+                </p>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section id="Tienda" class="pt-20 pb-12 px-16 sm:px-8">
+            <div class="max-w-8xl mx-auto text-left">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-16">
+                    <!-- Item 1 -->
+                    <div class="flex flex-col items-start mb-0">
+                        <!-- items-start en vez de items-center -->
+                        <div class="w-full md:h-4/5 h-80 aspect-square overflow-hidden relative group">
+                            <!-- Imagen principal (visible por defecto) -->
+                            <img src="https://img.kwcdn.com/product/fancy/f10e3fbc-70a3-4a69-aa60-262688ebc1c6.jpg?imageView2/2/w/1300/q/90/format/webp" alt="Novedad 1" class="w-full h-full md:rounded-none rounded-lg object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-0"
+                            />
+                            <!-- Imagen secundaria (visible al hacer hover) -->
+                            <img src="https://img.kwcdn.com/product/fancy/cbb00f40-16eb-4e37-b32e-8625c105257e.jpg?imageView2/2/w/1300/q/90/format/webp" alt="Novedad 1 Hover" class="absolute top-0 left-0 w-full h-full md:rounded-none rounded-lg object-cover transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+                            />
+                        </div>
+
+                        <p class="mt-4  md:text-2xl text-xl text-gray-900 tracking-tight font-title uppercase text-left">
+                            Conjunto de Color Solido
+                        </p>
+                        <h2 class="md:text-2xl text-xl tracking-wide text-black font-paragraph text-left">
+                            $120,00
+                        </h2>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <!-- items-start en vez de items-center -->
+                        <div class="w-full md:h-4/5 h-80 aspect-square overflow-hidden relative group">
+                            <!-- Imagen principal (visible por defecto) -->
+                            <img src="https://img.kwcdn.com/product/fancy/e7e84919-83a9-4c6e-a5d8-020d785ff51a.jpg?imageView2/2/w/1300/q/90/format/webp" alt="Novedad 1" class="w-full h-full md:rounded-none rounded-lg object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-0"
+                            />
+                            <!-- Imagen secundaria (visible al hacer hover) -->
+                            <img src="https://img.kwcdn.com/product/fancy/6be4e37f-c3ad-4b0b-9f1d-58c5143a9733.jpg?imageView2/2/w/800/q/70/format/webp" alt="Novedad 1 Hover" class="absolute top-0 left-0 w-full h-full md:rounded-none rounded-lg object-cover transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+                            />
+                        </div>
+                        <h3 class="mt-4 md:text-2xl text-xl text-gray-900 tracking-tight font-title uppercase text-left">
+                            Conjunto de Bikini de Malla
+                        </h3>
+                        <h2 class=" md:text-2xl text-xl tracking-wide text-black font-paragraph text-left">
+                            $250,00
+                        </h2>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <!-- items-start en vez de items-center -->
+                        <div class="w-full md:h-4/5 h-80 aspect-square overflow-hidden relative group">
+                            <!-- Imagen principal (visible por defecto) -->
+                            <img src="https://img-2.kwcdn.com/product/fancy/d5578d3a-2a91-4195-9206-0b87e2937b18.jpg?imageView2/2/w/1300/q/90/format/webp" alt="Novedad 1" class="w-full h-full md:rounded-none rounded-lg object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-0"
+                            />
+                            <!-- Imagen secundaria (visible al hacer hover) -->
+                            <img src="https://img.kwcdn.com/product/fancy/b3fa61b2-7ffb-4b2c-89b0-9f3a68a07a48.jpg?imageView2/2/w/1300/q/90/format/webp" alt="Novedad 1 Hover" class="absolute top-0 left-0 w-full h-full md:rounded-none rounded-lg object-cover transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+                            />
+                        </div>
+                        <h3 class="mt-4 md:text-2xl text-xl text-gray-900 tracking-tight font-title uppercase text-left">
+                            Conjunto Lauvoco
+                        </h3>
+                        <h2 class="md:text-2xl text-xl tracking-wide text-black font-paragraph text-left">
+                            $80,00
+                        </h2>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <!-- items-start en vez de items-center -->
+                        <div class="w-full md:h-4/5 h-80 aspect-square overflow-hidden relative group">
+                            <!-- Imagen principal (visible por defecto) -->
+                            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/1e6991fc312fa42211d5ef97ff3105d7.jpg?imageView2/2/w/1300/q/90/format/webp" alt="Novedad 1" class="w-full h-full md:rounded-none rounded-lg object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-0"
+                            />
+                            <!-- Imagen secundaria (visible al hacer hover) -->
+                            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/928659c81bf98328db40b9c3df0a5c2d.jpg?imageView2/2/w/1300/q/90/format/webp" alt="Novedad 1 Hover" class="absolute top-0 left-0 w-full h-full md:rounded-none rounded-lg object-cover transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+                            />
+                        </div>
+                        <h3 class="mt-4 md:text-2xl text-xl text-gray-900 tracking-tight font-title uppercase text-left">
+                            Conjunto de Mariposas
+                        </h3>
+                        <h2 class=" md:text-2xl text-xl tracking-wide text-black font-paragraph text-left">
+                            $59,00
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Columna 1: Marca + Descripción -->
+            <div>
+                <h3 class="text-xl font-brand text-gold mb-4">Desi</h3>
+                <p class="font-base text-sm leading-relaxed">
+                    Moda minimalista en trajes de baño. Calidad y elegancia en cada ola. Síguenos en nuestras redes y suscríbete para recibir novedades.
+                </p>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-3">Enlaces</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-gold transition">Inicio</a></li>
+                    <li><a href="products.html" class="hover:text-gold transition">Tienda</a></li>
+                    <li><a href="about.html" class="hover:text-gold transition">Nosotros</a></li>
+                    <li><a href="contact.html" class="hover:text-gold transition">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Redes + newsletter -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-3">Síguenos</h4>
+                <div class="flex space-x-4 mb-6">
+                    <!-- Pon aquí tus iconos SVG o font icons -->
+                    <a href="#" class="hover:text-gold transition">📘</a>
+                    <a href="#" class="hover:text-gold transition">📸</a>
+                    <a href="#" class="hover:text-gold transition">🐦</a>
+                </div>
+                <h4 class="text-lg font-semibold text-white mb-3">Newsletter</h4>
+                <form class="flex space-x-2">
+                    <input type="email" placeholder="Tu email" class="w-full px-3 py-2 bg-gray-800 text-gray-100 placeholder-gray-400 rounded focus:outline-none" />
+                    <button type="submit" class="px-4 py-2 bg-gold text-gray-900 font-semibold rounded hover:opacity-90 transition">
+                Suscribir
+              </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-4">
+            <p class="text-center text-sm text-gray-500">&copy; 2025 Desi. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const btn = document.getElementById('btn-menu');
+        const menu = document.getElementById('mobile-menu');
+        const l1 = document.getElementById('line1');
+        const l2 = document.getElementById('line2');
+        const l3 = document.getElementById('line3');
+        let open = false;
+
+        btn.addEventListener('click', () => {
+            open = !open;
+
+            // Show/hide menu
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+
+            // Animate hamburger → X
+            if (open) {
+                l1.classList.add('rotate-45', 'translate-y-1.5');
+                l2.classList.add('opacity-0');
+                l3.classList.add('-rotate-45', '-translate-y-1.5');
+            } else {
+                l1.classList.remove('rotate-45', 'translate-y-1.5');
+                l2.classList.remove('opacity-0');
+                l3.classList.remove('-rotate-45', '-translate-y-1.5');
+            }
+        });
+    </script>
+</body>
+
+</html>

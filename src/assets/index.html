@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desi - Minimal Swimwear</title>
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-gray-900">
+
+    <!-- NAVBAR: fixed y transparente -->
+
+    <!-- NAVBAR -->
+    <nav class="absolute top-0 left-0 w-full z-50 bg-transparent">
+        <!-- este div se vuelve fijo solo en móviles -->
+        <div class="fixed w-full flex items-center justify-between h-16 px-2 sm:px-4 lg:px-6 bg-white md:static md:bg-transparent z-50">
+            <a href="#" class="text-3xl font-semibold hover:text-gold scale-y-75 text-black font-paragraph">Desi</a>
+
+            <!-- Botón hamburguesa solo en móvil, fijo -->
+            <button id="btn-menu" class="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1 focus:outline-none z-50">
+        <span class="block w-6 h-0.5 bg-black transform transition duration-300 origin-center"></span>
+        <span class="block w-6 h-0.5 bg-black transition-opacity bg-opacity-0 duration-300"></span>
+        <span class="block w-6 h-0.5 bg-black transform transition duration-300 origin-center"></span>
+      </button>
+
+            <!-- Menú desktop -->
+            <ul class="hidden md:flex space-x-12 text-xl font-paragraph font-bold text-black tracking-wide">
+                <li><a href="lookbook.html" class="hover:text-gold transition">LookBook</a></li>
+                <li><a href="products.html" class="hover:text-gold transition">Tienda</a></li>
+                <li><a href="about.html" class="hover:text-gold transition">Nosotros</a></li>
+                <li><a href="contact.html" class="hover:text-gold transition">Contáctanos</a></li>
+            </ul>
+        </div>
+
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="font-paragraph font-semibold hidden fixed inset-0 z-40 bg-white flex-col items-center justify-center space-y-8 text-4xl text-black h-full">
+            <a href="lookbook.html" class="hover:text-gold transition scale-y-75">LookBook</a>
+            <a href="products.html" class="hover:text-gold transition scale-y-75">Tienda</a>
+            <a href="about.html" class="hover:text-gold transition scale-y-75">Nosotros</a>
+            <a href="contact.html" class="hover:text-gold transition scale-y-75">Contáctanos</a>
+        </div>
+    </nav>
+
+
+    <!-- HEADER / HERO -->
+    <header class="relative h-screen">
+        <!-- background image absoluta -->
+        <div class="absolute inset-0 bg-cover bg-top" style="background-image: url('../img/background3.jpeg');">
+        </div>
+        <!-- overlay opcional para contraste -->
+        <div class="absolute inset-0 bg-white bg-opacity-15"></div>
+        <!-- contenido -->
+        <div class="relative z-10 flex items-center h-full px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl font-title text-black">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-brand text-left">
+                    PV3
+                </h1>
+                <h2 class="mt-2 text-4xl md:text-5xl lg:text-6xl font-brand text-left">
+                    Rebajas de Verano.
+                </h2>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="Novedades" class="pt-20 pb-12 px-16 sm:px-8">
+            <div class="max-w-7xl mx-auto md:text-left text-center">
+                <h2 class="md:text-5xl text-4xl font-title text-gray-900 mb-10 ">Novedades</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Item 1 -->
+                    <div class="flex flex-col items-center md:items-start">
+                        <!-- items-start en vez de items-center -->
+                        <div class="w-full h-100 aspect-square overflow-hidden">
+                            <img src="../img/trajes/traje1.jpeg" alt="Novedad 1" class="w-full h-full md:rounded-none rounded-lg object-cover" />
+                        </div>
+                        <h3 class="mt-4 text-xl tracking-widest text-gray-600 font-paragraph md:text-left text-center">
+                            Traje de baño Ola
+                        </h3>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="flex flex-col items-center md:items-start">
+                        <div class="w-full h-100 aspect-square overflow-hidden ">
+                            <img src="../img/trajes/traje2.jpeg" alt="Novedad 2" class="w-full h-full md:rounded-none rounded-lg object-cover" />
+                        </div>
+                        <h3 class="mt-4 text-xl tracking-widest text-gray-600 font-paragraph md:text-left text-center">
+                            Bikini Minimal
+                        </h3>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="flex flex-col items-center md:items-start">
+                        <div class="w-full h-100 aspect-square overflow-hidden ">
+                            <img src="../img/trajes/traje4.jpeg" alt="Novedad 3" class="w-full h-full md:rounded-none rounded-lg object-cover " />
+                        </div>
+                        <h3 class="mt-4 text-xl tracking-widest text-gray-600 font-paragraph md:text-left text-center">
+                            Bikini Olona
+                        </h3>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="flex flex-col items-center md:items-start">
+                        <div class="w-full h-100 aspect-square overflow-hidden">
+                            <img src="../img/trajes/traje3.jpeg" alt="Novedad 4" class="w-full h-full md:rounded-none rounded-lg object-cover " />
+                        </div>
+                        <h3 class="mt-4 text-xl tracking-widest text-gray-600 font-paragraph md:text-left text-center">
+                            Short Playero
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección Colección -->
+
+        <section id="Coleccion" class="pt-20 pb-12 px-16 bg-[#f8f5f2] sm:px-8">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-12 md:gap-8 items-center">
+
+                <!-- Imagen grande -->
+                <div class="flex justify-center">
+                    <img src="../img/trajes/traje1.jpeg" alt="Sandalias grandes" class="w-full max-w-sm md:max-w-full h-auto  md:rounded-none rounded-lg object-cover shadow-md" />
+                </div>
+
+                <!-- Texto centro -->
+                <div class="text-center md:text-left px-4 md:px-10">
+                    <p class="uppercase font-paragraph text-sm mb-4 md:mb-8 tracking-widest text-gray-600">
+                        Colección de Bikinis
+                    </p>
+                    <h2 class="text-4xl md:text-5xl font-title font-semibold mt-2 md:mt-8 mb-4">
+                        Atadas
+                    </h2>
+                    <a href="#" class="inline-block border font-paragraph border-black tracking-wide text-lg md:text-xl px-6 py-3 md:px-7 md:py-4 text-black rounded-full hover:border-gold hover:bg-gold hover:text-white transition">
+                  Ver Todo
+                </a>
+                </div>
+
+                <!-- Imagen pequeña -->
+                <div class="flex justify-center items-end mb-4 md:mb-7">
+                    <div class="w-full max-w-sm md:w-[300px] bg-gray-100 overflow-hidden shadow-sm">
+                        <img src="../img/trajes/traje3.jpeg" alt="Sandalia atada" class="w-full h-auto object-contain md:rounded-none rounded-lg" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="Beneficios" class="pt-20 pb-12 bg-white">
+            <div class="max-w-7xl mx-auto space-y-16 px-16 sm:px-0">
+
+                <!-- Bloque 1: Texto IZQ — Imagen DER (en desktop) -->
+                <div class="flex flex-col md:flex-row items-center">
+                    <!-- Texto -->
+                    <div class="w-full md:w-1/2 md:pr-8 mb-6 md:mb-0 text-center md:text-left">
+                        <h3 class="md:text-5xl text-3xl font-title text-gray-900 mb-4">Calidad Premium</h3>
+                        <p class="font-paragraph text-gray-700 md:text-xl text-lg leading-relaxed">
+                            Nuestros trajes de baño están confeccionados con materiales de la más alta calidad, garantizando durabilidad y colores vibrantes temporada tras temporada.
+                        </p>
+                    </div>
+                    <!-- Imagen -->
+                    <div class="w-full md:w-1/2 md:pl-6">
+                        <img src="../img/trajes/traje5.jpeg" alt="Calidad Premium" class="w-full h-80 object-cover shadow-lg md:rounded-none rounded-lg" />
+                    </div>
+                </div>
+
+                <!-- Bloque 2: Imagen IZQ — Texto DER (en desktop); Texto arriba / Imagen abajo en móvil -->
+                <div class="flex flex-col-reverse md:flex-row items-center">
+                    <!-- Imagen -->
+                    <div class="w-full md:w-1/2 md:pr-8">
+                        <img src="../img/trajes/traje6.jpg" alt="Sostenibilidad" class="w-full h-80 object-cover shadow-lg md:rounded-none rounded-lg" />
+                    </div>
+                    <!-- Texto -->
+                    <div class="w-full md:w-1/2 md:px-7 text-center md:text-left mb-6 md:mb-0">
+                        <h3 class="md:text-5xl text-3xl font-title text-gray-900 mb-4">Sostenibilidad</h3>
+                        <p class="font-paragraph text-gray-700 md:text-xl text-lg leading-relaxed">
+                            Utilizamos tejidos reciclados y procesos eco-amigables para reducir nuestra huella ecológica sin sacrificar estilo ni confort.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section id="Instagram" class="pt-20 pb-12 bg-[#f8f5f2]">
+            <div class="max-w-7xl mx-auto px-16 sm:px-0 text-center mb-8 flex justify-between">
+                <h2 class="md:text-5xl text-3xl font-title text-gray-900">Síguenos</h2>
+                <h2 class="md:text-5xl text-3xl text-right  font-title text-gray-900">@desi.ec</h2>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-16 sm:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Foto 1 -->
+                <div class="flex flex-col items-start">
+                    <div class="w-full aspect-square overflow-hidden">
+                        <img src="../img/ig/ig1.jpeg" alt="IG 1" class="w-full h-full object-cover transition-transform md:rounded-none rounded-lg duration-300 hover:scale-105" />
+                    </div>
+                </div>
+                <!-- Foto 2 -->
+                <div class="flex flex-col items-start">
+                    <div class="w-full aspect-square overflow-hidden ">
+                        <img src="../img/ig/ig2.jpeg" alt="IG 2" class="w-full h-full object-cover transition-transform md:rounded-none rounded-lg duration-300 hover:scale-105" />
+                    </div>
+                </div>
+                <!-- Foto 3 -->
+                <div class="flex flex-col items-start">
+                    <div class="w-full aspect-square overflow-hidden ">
+                        <img src="../img/ig/ig3.jpeg" alt="IG 3" class="w-full h-full object-cover transition-transform md:rounded-none rounded-lg duration-300 hover:scale-105" />
+                    </div>
+                </div>
+                <!-- Foto 4 -->
+                <div class="flex flex-col items-start">
+                    <div class="w-full aspect-square overflow-hidden">
+                        <img src="../img/ig/ig4.jpeg" alt="IG 4" class="w-full h-full object-cover transition-transform md:rounded-none rounded-lg duration-300 hover:scale-105" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Columna 1: Marca + Descripción -->
+            <div>
+                <h3 class="text-xl font-brand text-gold mb-4">Desi</h3>
+                <p class="font-base text-sm leading-relaxed">
+                    Moda minimalista en trajes de baño. Calidad y elegancia en cada ola. Síguenos en nuestras redes y suscríbete para recibir novedades.
+                </p>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-3">Enlaces</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-gold transition">Inicio</a></li>
+                    <li><a href="products.html" class="hover:text-gold transition">Tienda</a></li>
+                    <li><a href="about.html" class="hover:text-gold transition">Nosotros</a></li>
+                    <li><a href="contact.html" class="hover:text-gold transition">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Redes + newsletter -->
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-3">Síguenos</h4>
+                <div class="flex space-x-4 mb-6">
+                    <!-- Pon aquí tus iconos SVG o font icons -->
+                    <a href="#" class="hover:text-gold transition">📘</a>
+                    <a href="#" class="hover:text-gold transition">📸</a>
+                    <a href="#" class="hover:text-gold transition">🐦</a>
+                </div>
+                <h4 class="text-lg font-semibold text-white mb-3">Newsletter</h4>
+                <form class="flex space-x-2">
+                    <input type="email" placeholder="Tu email" class="w-full px-3 py-2 bg-gray-800 text-gray-100 placeholder-gray-400 rounded focus:outline-none" />
+                    <button type="submit" class="px-4 py-2 bg-gold text-gray-900 font-semibold rounded hover:opacity-90 transition">
+                Suscribir
+              </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-4">
+            <p class="text-center text-sm text-gray-500">&copy; 2025 Desi. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const btn = document.getElementById('btn-menu');
+        const menu = document.getElementById('mobile-menu');
+        const l1 = document.getElementById('line1');
+        const l2 = document.getElementById('line2');
+        const l3 = document.getElementById('line3');
+        let open = false;
+
+        btn.addEventListener('click', () => {
+            open = !open;
+
+            // Show/hide menu
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+
+            // Animate hamburger → X
+            if (open) {
+                l1.classList.add('rotate-45', 'translate-y-1.5');
+                l2.classList.add('opacity-0');
+                l3.classList.add('-rotate-45', '-translate-y-1.5');
+            } else {
+                l1.classList.remove('rotate-45', 'translate-y-1.5');
+                l2.classList.remove('opacity-0');
+                l3.classList.remove('-rotate-45', '-translate-y-1.5');
+            }
+        });
+    </script>
+</body>
+
+</html>
